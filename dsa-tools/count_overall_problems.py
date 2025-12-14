@@ -42,7 +42,7 @@ def update_readme():
     with open(target, 'r', encoding='utf-8') as f:
         existing_content = f.read().split('---')[0].strip()  
 
-    topic_list = [f"| *{topic}* | **{counts[0]}** | **{counts[1]}** | **{counts[2]}** | **{counts[3]}** | ![Path to corresponding topic's readme](./{topic}/README.md) |" for topic, counts in topics_done.items()]
+    topic_list = [f"| *{topic}* | **{counts[0]}** | **{counts[1]}** | **{counts[2]}** | **{counts[3]}** | ![./{topic}/README.md](./{topic}/README.md) |" for topic, counts in topics_done.items()]
     topics_section = ("\n| Topic | Easy | Medium | Hard | Total | Path |\n|------|------|--------|------|-------|-------|\n" +"\n".join(topic_list))
     new_content = f"""
 ---
