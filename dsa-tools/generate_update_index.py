@@ -1,7 +1,7 @@
 import os
 import re
 
-BASE = os.path.abspath(os.path.join(os.getcwd(), '../DSA_solved_problems'))
+BASE = os.path.abspath(os.path.join(os.getcwd(), '../../DSA_solved_problems'))
 
 def extract_details(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:

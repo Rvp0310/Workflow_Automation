@@ -1,6 +1,6 @@
 import os
 
-BASE = os.path.abspath(os.path.join(os.getcwd(), '../DSA_solved_problems'))
+BASE = os.path.abspath(os.path.join(os.getcwd(), '../../DSA_solved_problems'))
 
 def create_topic_folder(topic_name, base_dir=BASE):
     topic_dir = os.path.join(base_dir, topic_name)
